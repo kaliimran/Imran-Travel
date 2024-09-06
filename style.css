@@ -4,7 +4,7 @@
     --color:#FF5400;
     --black: #131318;
     --white: #FFFFFF;
-    --lowblack: #424247;
+    --lowBlack: #00000071;
 }
 
 * {
@@ -20,7 +20,7 @@
 .btn-primary {
     color: var(--white);
     background-color: var(--color);
-    padding: 1.05rem 2rem;
+    padding: 1.05rem 3rem;
     border-style: none;
     border-radius: .70rem;
     cursor: pointer;
@@ -138,6 +138,59 @@ body{
 /* Header End */
 
 
+/* Main Start */
+
+main{
+    margin-top: 6.25rem;
+}
+
+.popular-section {
+    display: flex;
+     width: 1170px;
+     margin: 0 auto;
+     gap: 2rem;
+     align-items: center;
+}
+
+.popular-title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
+.popular-list {
+    color: var(--lowBlack);
+    margin-bottom: 1rem;
+}
+
+.circle {
+    margin-bottom: 1.5rem;
+}
+
+.popular-desc {
+    color: var(--lowBlack);
+    margin-bottom: 1.5rem;
+}
+
+.read {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Design */
@@ -179,5 +232,21 @@ body{
     }
     #select {
         width: 70%;
+    }
+
+
+    /* main */
+    /* popular-section */
+    .popular-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .popular-content, .popular-img {
+        width: 100%;
+    }
+
+    .popular-content {
+        text-align: center;
     }
 }
