@@ -1,0 +1,83 @@
+/* Shared code */
+
+:root{
+    --color:#FF5400;
+    --black: #131318;
+    --white: #FFFFFF;
+    --lowblack: #424247;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "Mulish", sans-serif;
+}
+body{
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+/* Header work */
+
+/* Navbar */
+
+
+.name {
+    color: var(--black);
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+.travel {
+    color: var(--color);
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.name-tag {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 44px;
+    font-size: 1.125rem;
+}
+
+.home {
+    color: var(--color);
+}
+
+/* ================== */
+
+/* Banner Section */
+
+
+
+
+
+
+/* Responsive Design */
+/* Mobile Device */
+
+@media screen and (max-width: 576px) {
+    .navbar-section {
+        flex-direction: column;
+    }
+    .name-tag {
+        padding-bottom: 20px;
+    }
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
