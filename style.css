@@ -24,6 +24,8 @@
     border-style: none;
     border-radius: .70rem;
     cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 800;
 }
 
 
@@ -83,6 +85,10 @@ body{
 
 /* Banner Section */
 
+
+.format {
+    font-size: 13px;
+}
 .banner-section {
     background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
@@ -249,10 +255,200 @@ main{
 }
 
 
-/* why section */
+/* Card section */
+
+.card-section {
+    margin-top: 4rem;
+}
+
+.choose-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.choose-desc {
+    color: var(--lowBlack);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
 
 
+/* card container */
 
+
+.card-container {   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+    font-weight: 900;
+}
+
+.card-desc {
+    line-height: 1.9;
+}
+.hotel, .price {
+    background-color: #fbb46323;
+    padding: 128px 55px 32px 55px;
+    border-radius: 1.4rem;
+}
+.world {
+    padding: 128px 55px 32px 55px;
+    background-color: #29cdf61f;
+    border-radius: 1.4rem;
+}
+
+
+/* Deals Section */
+
+.deals-section {
+    margin-top: 5rem;
+}
+
+.deals-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 900;
+}
+.deals-desc {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
+/* Deals Container  */
+
+.hotel-img {
+    width: 100%;
+}
+
+
+.hotel-desc {
+    position: relative;
+    width: 570px;
+    background-color: rgba(255, 255, 255, 0.292);
+    backdrop-filter: blur(1px);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2.5rem;
+    bottom: 390px;
+    left: 37%;
+}
+
+.hotel-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.hotel-title-desc {
+    color: #5A5A5D;
+    margin-bottom: 1rem;
+}
+
+.price-tag {
+    font-size: 1.25rem;
+    color: var(--color);
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.center-btn {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* perfect-section */
+
+.perfect-container {
+    width: 532px;
+}
+
+.perfect-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.perfect-title {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+.perfect-desc {
+    color: var(--lowBlack);
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+}
+
+.square {
+    color: var(--black);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.perfect-video {
+    border-radius: 1.5rem;
+}
+
+/* Newsletter section */
+
+.newsletter-section {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 8rem;
+}
+
+.newsletter-content {
+    width: 470px;
+    border: 1px solid var(--color);
+    border-radius: 1rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.newsletter-title {
+    font-size: 1.5rem;
+    color: var(--black);
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.news-desc {
+    color: var(--lowBlack);
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#name, #email {
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    border-style: none;
+}
+
+.subscribe-btn {
+    margin-bottom: 2.5rem;
+}
 
 
 
@@ -336,5 +532,44 @@ main{
         grid-template-columns: 1fr;
     }
 
-    /* Why section */
+    /* Card section */
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Deals Section */
+
+    .hotel-desc {
+        display: none;
+    }
+
+    /* Perfect section */
+
+    .perfect-section {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    .perfect-container {
+        width: 100%;
+    }
+    .perfect-video {
+        width: 100%;
+    }
+
+
+    /* newsletter section */ 
+    .newsletter-content {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .newsletter-section {
+        flex-direction: column;
+    }
+
+    .news-img {
+        width: 100%;
+    }
 }
